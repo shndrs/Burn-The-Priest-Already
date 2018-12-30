@@ -11,8 +11,18 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-    override func didMove(to view: SKView) {
+    var fireBall:SKSpriteNode!
     
+    
+    override func didMove(to view: SKView) {
+        fireBall = childNode(withName: "FireBall") as? SKSpriteNode
+        
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first {
+            
+        }
     }
     
     override func update(_ currentTime: TimeInterval) {
